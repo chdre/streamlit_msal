@@ -85,6 +85,10 @@ class Component extends StreamlitComponentBase {
         authority,
         redirectUri,
       },
+      cache: {
+        cacheLocation: "localStorage",
+        storeAuthStateInCookie: false,
+        },
     });
 
     await client.initialize();
